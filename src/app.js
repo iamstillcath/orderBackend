@@ -10,8 +10,8 @@ require("dotenv").config();
 const PORT = process.env.PORT || 3000;
 
 
-const orderRoute = require("./api/routes/order");
-const userRoute = require("./api/routes/user");
+const orderRoute = require("../api/routes/order");
+const userRoute = require("../api/routes/user");
 
 mongoose.connect(process.env.DATABASE_URL)
 .then(success=>{
